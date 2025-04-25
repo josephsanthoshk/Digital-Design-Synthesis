@@ -1,0 +1,23 @@
+Step 1: Verify System Dependencies
+
+Before starting, ensure that the following are installed and accessible within your system's PATH environment variable:
+
+wish: The Tcl/Tk GUI interpreter.
+ModelSim: The simulator, specifically ensuring the vsim command is available.
+Python: Along with necessary plotting libraries such as matplotlib.
+
+Step 2: Initiate the Graphical User Interface (GUI)
+
+Open a command prompt or terminal window.
+Navigate to the directory containing the sine_wave_gui_flow.tcl script.
+Execute the script using the command: wish sine_wave_gui_flow.tcl
+
+Step 3: Interact with the GUI and Trigger Simulation
+
+A GUI window will appear. Enter an integer value between 0 and 1023 (inclusive) into the designated input field. This value represents the frequency.
+Click the "Run Simulation" button.
+Automated Actions Following Simulation Trigger:
+
+The input frequency value will be automatically saved to a file named frequency.txt.
+ModelSim will be launched in batch mode to execute the simulation based on the provided frequency.
+Upon successful simulation, a plot of the generated waveform will be displayed.
